@@ -1,0 +1,32 @@
+# Your AWS key id
+aws_access_key_id = 
+# Your AWS secret key
+aws_secret_access_key = 
+# The name of your keypair
+key_name = 
+# The path to you keypair private key
+key_filename = 
+# The path to the Spark EC2 script
+spark_ec2_script = /workspace/spark-0.8.1-incubating/ec2/spark-ec2
+# The version of spark to run
+spark_version = 0.8.1
+# How much memory to give the job on each worker
+spark_mem = 50g
+# How many workers to spin up in your cluster
+cluster_size = 16 
+# How many CPUs are on each machine in the cluster
+cluster_cpus_per_node = 8 
+# The cluster prefix -- used to create a cluster name
+cluster_prefix = adam_cluster
+# What zone to launch the cluster in
+cluster_zone = us-east-1c
+# What instance types to use
+cluster_instance_type = m2.4xlarge
+# What SSH user to use
+user = ec2-user
+# That path to your adam jar file
+adam_jar = adam-0.6.0-SNAPSHOT.jar
+# The location on s3 of the BAM file
+bam_file_s3 = s3n://frank-adam/NA12878.mapped.ILLUMINA.bwa.CEU.high_coverage_pcr_free.20130906.bam
+# The location to save the s3 BAM file on the HDFS file system
+bam_file_hdfs = /user/root/NA12878.mapped.ILLUMINA.bwa.CEU.high_coverage_pcr_free.20130906.bam
